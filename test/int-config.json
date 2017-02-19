@@ -1,0 +1,20 @@
+{
+  "log" : {
+    "logdir": null,
+    "logfile": "./test/int-log4js.json"
+  },
+  "front": {
+    "path": null
+  },
+  "server": {
+    "inet": "127.0.0.1",
+    "port": 3001,
+    "type": "development"
+  },
+  "db": {
+    "url": "mongodb://localhost:27017/notifyme-test",
+    "options": {
+
+    }
+  }
+}

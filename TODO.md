@@ -1,0 +1,4 @@
+- when invalide json data send, no diplay http code 500,
+- get/put user everybody can access to user, not really good,
+- in api, check promise chain for multi catch(),
+- https://github.com/eXigentCoder/swagger-spec-express

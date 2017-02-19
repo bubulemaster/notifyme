@@ -1,0 +1,58 @@
+{
+  "appenders": [
+    {
+      "category": "startup",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "boot.log"
+      }
+    },
+    {
+      "category": "message",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "messages.log"
+      }
+    },
+    {
+      "category": "server",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "server.log"
+      }
+    },
+    {
+      "category": "error",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "error.log"
+      }
+    },
+    {
+      "category": "api-user",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "api-user.log"
+      }
+    },
+    {
+      "category": "api-stream",
+      "type": "logLevelFilter",
+      "level": "DEBUG",
+      "appender": {
+        "type": "file",
+        "filename": "api-stream.log"
+      }
+    }
+  ]
+}

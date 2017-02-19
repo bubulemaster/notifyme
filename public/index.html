@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NotifyMe</title>
+    <style>
+    body {
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+	<img src="logo.png" />
+      <h1>
+        <span id="name"></span> version <span id="version"></span>
+      </h1>
+    </div>
+    <div >
+      <span id="user"></span> User(s)<br />
+      <span id="stream"></span> Stream(s)
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+    $.getJSON('api/about', function (data) {
+      $('#name').replaceWith(data.name)
+      $('#version').replaceWith(data.version)
+      $('#user').replaceWith(data.users.count)
+      $('#stream').replaceWith(data.streams.count)
+    })
+    </script>
+  </body>
+</html>

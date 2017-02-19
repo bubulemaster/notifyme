@@ -1,0 +1,38 @@
+{
+  "name": "NotifyMe",
+  "version": "0.0.1",
+  "description": "Notification application for entreprise",
+  "author": "Emeric MARTINEAU",
+  "license": "BSD-3-Clause",
+  "scripts": {
+	"postinstall": "cd public && bower install",
+    "test" : "node_modules/.bin/mocha -u exports test/integration/integration.js",
+    "start": "node index.js",
+    "mongostart": "mongod --config /usr/local/etc/mongod.conf",
+    "zip": "zip -r -X  notifyme.zip . -x node_modules/\\* -x public/bower_components/\\*"
+  },
+  "dependencies": {
+    "basic-auth": "^1.1.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.14.0",
+    "express-swagger-ui": "^0.1.0",
+    "lodash": "^4.17.4",
+    "log4js": "^1.1.0",
+    "mongoose": "^4.7.6",
+    "serve-favicon": "^2.3.2",
+    "socket.io": "1.7.2",
+    "socketio-auth": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  },
+  "standard": {
+    "globals": ["it", "before", "describe", "after"],
+    "ignore": [
+      "**/bower_components/"
+    ]
+  }
+}

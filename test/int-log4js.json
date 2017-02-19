@@ -1,0 +1,52 @@
+{
+  "appenders": [
+    {
+      "category": "startup",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    },
+    {
+      "category": "message",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    },
+    {
+      "category": "server",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    },
+    {
+      "category": "error",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    },
+    {
+      "category": "api-user",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    },
+    {
+      "category": "api-stream",
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "console"
+      }
+    }
+  ]
+}
