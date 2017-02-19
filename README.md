@@ -1,3 +1,5 @@
+![NotifyMe logo](https://raw.githubusercontent.com/bubulemaster/notifyme/master/public/logo.png)
+
 # NotifyMe Offical Server
 
 Big firm, slow communication ? Too many e-mail ? Mailing list issue ?
